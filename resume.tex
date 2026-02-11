@@ -1,0 +1,187 @@
+%-------------------------
+% Latex based Resume
+% Author : Cloe Cha
+% Based off of: https://github.com/jakegut/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% serif
+\usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\setlength{\footskip}{5pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%----------CUSTOM COMMANDS----------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%----------------------------------------------------------
+%--------------------RESUME STARTS HERE--------------------
+%----------------------------------------------------------
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\huge Cloe Cha} \\ \vspace{2pt}
+    \small (732) 915-6473 $|$ 
+    \href{mailto:ccloecha@gmail.com}{ccloecha@gmail.com} $|$ 
+    \href{https://www.linkedin.com/in/cloecha/}{linkedin.com/in/cloecha/} $|$ 
+    \href{https://github.com/ccha3uw}{github.com/ccha3uw}
+\end{center}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Washington}{Seattle, WA}
+      {Bachelor of Science in Human-Computer Interaction}{Sep 2022 -- Mar 2026}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Associate Product Manager}{Sep 2024 -- Oct 2025}
+      {Vial Therapeutics}{San Francisco, CA (Remote)}
+      \resumeItemListStart
+        \resumeItem{Reduced protocol preparation time \textbf{75\%} by shipping an AI-powered document generator using Perplexity and Gemini that converts completed pre-clinical research into FDA-ready drafts, eliminating months of manual synthesis.}
+        \resumeItem{Removed Engineering from the critical path by enabling non-technical teams to self-serve AI document generation through dynamic form logic and iterative editing workflows.}
+        \resumeItem{Increased core product net promoter score from \textbf{17 to 82} over \textbf{12 months} by identifying recurring pain points through user research and delivering targeted workflow improvements.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Product Management Intern}{May 2023 -- May 2024}
+      {Vial Therapeutics}{San Francisco, CA (Remote)}
+      \resumeItemListStart
+        \resumeItem{Eliminated vendor dependency achieving a \textbf{97\%} cost reduction (\textbf{\$150K $\rightarrow$ \$5K/year}) by replacing a third-party e-signature vendor with an in-house solution embedded into core workflows.}
+        \resumeItem{Delivered within \textbf{9 months} by establishing async planning, documentation, and execution processes that improved cross-functional delivery reliability and were adopted org-wide.}
+        \resumeItem{Partnered with Legal and Compliance to translate regulatory requirements into technical specifications, enabling Engineering and UX to deliver a production-ready, FDA- and GDPR-compliant solution.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Product Management Intern}{May 2024 -- Aug 2024}
+      {Spring Health}{New York, NY (Remote)}
+      \resumeItemListStart
+        \resumeItem{Identified root causes of a \textbf{7\%} onboarding drop-off by pairing Mixpanel funnel analysis with \textbf{20} async Dscout interviews, informing product leadership decisions on onboarding flow changes.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Product Management Intern}{May 2022 -- Aug 2022}
+      {Eachday Health}{Pittsburgh, PA}
+      \resumeItemListStart
+        \resumeItem{Enabled a \textbf{\$325K} pre-seed raise (IndieBio) by delivering a validated MVP through Kanban workflows, weekly standups, and usability testing with \textbf{6 educators} and \textbf{18 students}.}
+        \resumeItem{Validated core product assumptions by running accessibility and usability pilots at a special-needs school, informing MVP scope and de-risking the product for investors.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Associate Student Researcher}{Jun 2022 -- Aug 2022}
+      {Carnegie Mellon University, HCI Institute}{Pittsburgh, PA}
+      \resumeItemListStart
+        \resumeItem{Synthesized insights across \textbf{28 academic papers} by conducting a literature review analyzing core game design components and interaction patterns.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------LEADERSHIP-----------
+\section{Leadership}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Capstone Team Lead}{Sep 2025 -- Dec 2025}
+      {INFO 492 Intensive Capstone}{Seattle, WA}
+      \resumeItemListStart
+        \resumeItem{Led a 4-person team to build an agentic AI system for Puget Sound Energy, prototyping with v0 and implementing with Cursor + Ollama, automating audit record classification for substation operators.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Selection Director}{Sep 2022 -- Mar 2023}
+      {TEDxUofW}{Seattle, WA}
+      \resumeItemListStart
+        \resumeItem{Led 10-person student team to manage speaker selection across \textbf{150} nominated speakers.}
+        \resumeItem{Collaborated with selected speakers to refine and finalize their speeches.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, Python, SQL, HTML/CSS, Java, Git} \\
+     \textbf{Tools}{: Figma, Jira, PostHog, Mixpanel, Dscout, Excel, Tableau, Looker, Confluence, Intercom, V0, Cursor} \\
+     \textbf{Skills}{: Product Discovery, PRDs, User Research, A/B Testing, Agile/SCRUM, Wireframing, Statistical Analysis}
+    }}
+ \end{itemize}
+
+\end{document}
