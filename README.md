@@ -1,5 +1,5 @@
-# LaTeX Resume
+# Resume
 
-This repository contains the LaTeX source for my resume.
+![Resume preview](preview.png)
 
-👉 **PDF:** [resume.pdf](resume.pdf)
+📄 **PDF:** [resume.pdf](resume.pdf)
